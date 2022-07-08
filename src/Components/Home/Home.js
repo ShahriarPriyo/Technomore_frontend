@@ -17,7 +17,7 @@ const Home = () => {
                     This blogsite shares various news of technology world. We also like to share about latest changes from global perspective.
                 </p>
                 <div>
-                    <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 transition ease-in-out delay-150'>
+                    <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
                         View Blogs
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3 ' />
