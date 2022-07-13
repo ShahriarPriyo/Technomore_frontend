@@ -14,6 +14,7 @@ const Navbar = () => {
                         <Link to='/about' className='px-4 hover:bg-pink-700 hover:rounded-md'>About</Link>
                         <Link to='/services' className='px-4 hover:bg-pink-700 hover:rounded-md'>Services</Link>
                         <Link to='/blogs' className='px-4 hover:bg-pink-700 hover:rounded-md'>Blogs</Link>
+                        <Link to='/demos' className='px-4 hover:bg-pink-700 hover:rounded-md'>Demos</Link>
                         <button className='bg-pink-600 p-1 rounded-xl mx-4 text-white hover:bg-red-700'>Login</button>
                     </div>
                 </div>
