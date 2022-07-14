@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 // import { Link } from 'react-router-dom'
 
@@ -10,11 +10,11 @@ const Navbar = () => {
                 <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center w-full py-3'>
                     <div className='text-white text-3xl header'>Technomore</div>
                     <div className='text-[#FFFFFF] flex mx-3 px-3'>
-                        <Link to='/' className='px-4 hover:bg-pink-700 hover:rounded-md' >Home</Link>
-                        <Link to='/about' className='px-4 hover:bg-pink-700 hover:rounded-md'>About</Link>
-                        <Link to='/services' className='px-4 hover:bg-pink-700 hover:rounded-md'>Services</Link>
-                        <Link to='/blogs' className='px-4 hover:bg-pink-700 hover:rounded-md'>Blogs</Link>
-                        <Link to='/demos' className='px-4 hover:bg-pink-700 hover:rounded-md'>Demos</Link>
+                        <NavLink to='/' className='px-4 hover:bg-pink-700 hover:rounded-md' >Home</NavLink>
+                        <NavLink to='/about' className='px-4 hover:bg-pink-700 hover:rounded-md'>About</NavLink>
+                        <NavLink to='/services' className='px-4 hover:bg-pink-700 hover:rounded-md'>Services</NavLink>
+                        <NavLink to='/blogs' className='px-4 hover:bg-pink-700 hover:rounded-md'>Blogs</NavLink>
+                        <NavLink to='/demos' className='px-4 hover:bg-pink-700 hover:rounded-md'>Demos</NavLink>
                         <button className='bg-pink-600 p-1 rounded-xl mx-4 text-white hover:bg-red-700'>Login</button>
                     </div>
                 </div>

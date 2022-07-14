@@ -1,27 +1,33 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import Zoom from 'react-reveal/Zoom';
 
 const About = () => {
     return (
         <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-            <div className='flex flex-col justify-center items-center w-full h-full'>
-                <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
-                    <div className='sm:text-right pb-8 pl-4'>
-                        <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
-                            About
-                        </p>
+
+            <Zoom>
+                <div className='flex flex-col justify-center items-center w-full h-full'>
+                    <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
+                        <div className='sm:text-right pb-8 pl-4'>
+                            <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
+                                About
+                            </p>
+                        </div>
+                        <div></div>
                     </div>
-                    <div></div>
+                    <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+                        <div className='sm:text-right text-4xl font-bold'>
+                            <p><span className='header'>Technomore</span> is trying to make an impact on tech community.</p>
+                        </div>
+                        <div>
+                            <p>Industry 4.0 is slowly making progress. So a strong tech community can bring revolutionary changes among people.<span className='header'>Technomore</span> will try to provide a completely different vibe among tech specialists and those who want to make a contribution.</p>
+                        </div>
+                    </div>
                 </div>
-                <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                    <div className='sm:text-right text-4xl font-bold'>
-                        <p><span className='header'>Technomore</span> is trying to make an impact on tech community.</p>
-                    </div>
-                    <div>
-                        <p>Industry 4.0 is slowly making progress. So a strong tech community can bring revolutionary changes among people.<span className='header'>Technomore</span> will try to provide a completely different vibe among tech specialists and those who want to make a contribution.</p>
-                    </div>
-                </div>
-            </div>
+
+            </Zoom>
+
 
             {/* stat */}
             <div class="stats shadow bg-[#0a192f] text-white w-full p-5">
