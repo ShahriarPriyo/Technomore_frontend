@@ -7,7 +7,6 @@ import About from './Components/About/About';
 import Services from './Components/Services/Services';
 import Blogs from './Components/Blogs/Blogs';
 import Demos from './Components/Demos/Demos';
-import Footer from './Components/Footer/Footer';
 // import { Link } from 'react-router-dom';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/demos' element={<Demos></Demos>}></Route>
       </Routes>
-      <Footer />
     </div>
   );
 }

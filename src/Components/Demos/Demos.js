@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Demo from './Demo';
 
@@ -5,11 +6,11 @@ const Demos = () => {
     const [blog, setBlog] = useState([])
 
     useEffect(() => {
-        // eslint-disable-next-line no-unused-expressions
-        fetch(`http://localhost:3001/api/v1/posts`)
-            .then(res => res.json())
-            // eslint-disable-next-line no-undef
-            .then(data => setBlog(data))
+        const fetchData = async () => {
+            const res = await axios.get(`http://localhost:3001/api/v1/posts`);
+            setBlog(res.data);
+        };
+        fetchData();
     }, []);
     return (
         <div>
