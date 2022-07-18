@@ -15,7 +15,9 @@ const Navbar = () => {
                         <NavLink to='/services' className='px-4 hover:bg-pink-700 hover:rounded-md'>Services</NavLink>
                         <NavLink to='/blogs' className='px-4 hover:bg-pink-700 hover:rounded-md'>Blogs</NavLink>
                         <NavLink to='/demos' className='px-4 hover:bg-pink-700 hover:rounded-md'>Demos</NavLink>
-                        <button className='bg-pink-600 p-1 rounded-xl mx-4 text-white hover:bg-red-700'>Login</button>
+                        <NavLink to='/login' className='px-4 hover:bg-pink-700 hover:rounded-md'>Login</NavLink>
+                        <NavLink to='/signup' className='px-4 hover:bg-pink-700 hover:rounded-md'>Signup</NavLink>
+                        <button className='bg-pink-600 p-1 rounded-xl mx-4 text-white hover:bg-red-700'>Explore</button>
                     </div>
                 </div>
 
