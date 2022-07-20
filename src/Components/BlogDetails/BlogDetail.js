@@ -23,9 +23,9 @@ const BlogDetail = () => {
     }, []);
 
     return (
-        <div className='bg-[#0a192f] h-screen pl-40'>
+        <div className='bg-[#0a192f] h-screen p-30'>
 
-            <div class="card w-96 bg-gray-200 shadow-teal-300 shadow-lg h-96">
+            <div class="card w-full bg-gray-200 shadow-teal-300 shadow-lg h-96">
 
                 <div class="card-body">
                     <h2 class="card-title text-2xl">

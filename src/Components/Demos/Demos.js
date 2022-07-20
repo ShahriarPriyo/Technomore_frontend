@@ -17,7 +17,7 @@ const Demos = () => {
             {/* <h1>Total blogs:{blog.length}</h1> */}
             <div className='grid gap-4 grid-cols-3 bg-[#0a192f] h-screen pl-40 '>
                 {
-                    blog.map(demo => <Demo
+                    blog.reverse().map(demo => <Demo
                         key={demo.id}
                         demo={demo}
                     ></Demo>)
