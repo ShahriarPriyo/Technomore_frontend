@@ -34,12 +34,12 @@ const Blogs = () => {
             </div>
 
             {/* card 3 */}
-            <div class="card w-96 bg-teal-200 shadow-teal-300 shadow-lg h-96">
+            <div class="card w-96 bg-teal-200 shadow-teal-300  shadow-lg h-96">
                 {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
                 <div class="card-body">
                     <h2 class="card-title text-2xl">
                         Russia barely got started in Ukraine: Putin
-                        <div class="badge badge-secondary h-10">Shahriar Priyo</div>
+                        <div class="badge badge-secondary h-10 text-sm">Shahriar Priyo</div>
                     </h2>
                     <p>President Vladimir Putin said on Thursday that Russia had barely got started in Ukraine and dared the West to try to defeat it on the battlefield, while insisting that Moscow was still open to the idea of peace talks.</p>
                     <div class="card-actions justify-end">

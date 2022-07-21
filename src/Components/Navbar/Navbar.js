@@ -20,11 +20,14 @@ const Navbar = () => {
                         <NavLink to='/' className='px-4 hover:bg-pink-700 hover:rounded-md' >Home</NavLink>
                         <NavLink to='/about' className='px-4 hover:bg-pink-700 hover:rounded-md'>About</NavLink>
                         {/* <NavLink to='/services' className='px-4 hover:bg-pink-700 hover:rounded-md'>Services</NavLink> */}
-                        <NavLink to='/blogs' className='px-4 hover:bg-pink-700 hover:rounded-md'>Blogs</NavLink>
+                        {/* <NavLink to='/blogs' className='px-4 hover:bg-pink-700 hover:rounded-md'>Blogs</NavLink> */}
                         <NavLink to='/demos' className='px-4 hover:bg-pink-700 hover:rounded-md'>Demos</NavLink>
 
                         {mycookie && myDecodedToken && isMyTokenExpired === false && (
                             <NavLink to='/profile' className='px-4 hover:bg-pink-700 hover:rounded-md'>Profile</NavLink>
+                        )}
+                        {mycookie && myDecodedToken && isMyTokenExpired === false && (
+                            <NavLink to='/createblog' className='px-4 hover:bg-pink-700 hover:rounded-md'>Create Blog</NavLink>
                         )}
 
                         {mycookie && myDecodedToken && isMyTokenExpired === false ? (
@@ -35,7 +38,7 @@ const Navbar = () => {
 
                         {/* <NavLink to='/signup' className='px-4 hover:bg-pink-700 hover:rounded-md'>Signup</NavLink> */}
                         {mycookie && myDecodedToken && isMyTokenExpired === false && (
-                            <button className='bg-pink-600 p-1 rounded-xl mx-4 text-white hover:bg-red-700'>{myDecodedToken.username}</button>
+                            <button className='bg-blue-700 p-1 rounded-xl mx-4 text-white hover:bg-red-700'>{myDecodedToken.username}</button>
                         )}
 
                     </div>

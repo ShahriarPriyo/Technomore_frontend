@@ -34,8 +34,10 @@ const BlogDetail = () => {
                     </h2>
                     <p>{blog.description}</p>
                     <div class="card-actions justify-end">
-                        <button onClick={goToHome} class="btn btn-secondary">Return to Home</button>
-                        <button onClick={goToBlogs} class="btn btn-secondary">Return to Blogs</button>
+                        {/* <button onClick={goToHome} class="btn btn-secondary">Return to Home</button>
+                        <button onClick={goToBlogs} class="btn btn-secondary">Return to Blogs</button> */}
+                        <button onClick={goToHome} class="btn bg-blue-600">Update Blog</button>
+                        <button onClick={goToBlogs} class="btn bg-red-600">Delete Blog</button>
                     </div>
                 </div>
             </div>

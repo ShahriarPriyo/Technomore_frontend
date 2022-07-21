@@ -15,7 +15,7 @@ const Demos = () => {
     return (
         <div>
             {/* <h1>Total blogs:{blog.length}</h1> */}
-            <div className='grid gap-4 grid-cols-3 bg-[#0a192f] h-screen pl-40 '>
+            <div className='grid gap-4 grid-cols-3 bg-[#0a192f] h-full p-10 mb-2 '>
                 {
                     blog.reverse().map(demo => <Demo
                         key={demo.id}

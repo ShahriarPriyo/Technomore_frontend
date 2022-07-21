@@ -9,7 +9,6 @@ const Signup = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [pwd, setPwd] = useState('');
-    // const [confirmPwd, setConfirmPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
 
     const goTologin = () => {

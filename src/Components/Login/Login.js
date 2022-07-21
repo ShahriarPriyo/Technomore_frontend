@@ -13,6 +13,8 @@ const Login = () => {
         navigate('/signup')
     }
 
+
+
     const handleSubmit = async (e) => {
         if (e && e.preventDefault) {
             e.preventDefault();
@@ -28,11 +30,12 @@ const Login = () => {
             .then((response) => {
                 console.log(response)
                 const token = response.data.token;
-                //localStorage.setItem('mytoken', token);
 
                 Cookies.set('macaron', token, { expires: 7 });
-                navigate('/');
-                window.location.reload();
+                // navigate('/');
+                // window.location.reload();
+                window.location.href = '/';
+
             })
             .catch((error) => {
                 setErrMsg('');

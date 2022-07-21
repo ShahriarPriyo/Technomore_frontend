@@ -4,7 +4,7 @@ import Cookies from 'js-cookie';
 
 const Signout = () => {
     Cookies.remove('macaron');
-    window.location.href('/')
+    window.location.href = '/';
     return;
 };
 
